@@ -1,7 +1,7 @@
 <template>
   <div>
     <!--路由组件-->
-    <!--<router-view/>-->
+    <router-view/>
     <!--底部-->
     <FooterGuide/>
   </div>
