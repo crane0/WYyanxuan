@@ -643,6 +643,12 @@
     padding-bottom (98/$rem)
     background-color #F4F4F4
     .nav-header
+      position fixed!important
+      z-index 2
+      left 0
+      top 0
+      width 100%
+      background-color #F4F4F4
       header
         display flex
         align-items center
@@ -710,6 +716,7 @@
 
 
     .slide-wrap
+      margin-top (148/$rem)
       margin-bottom (20/$rem)
       .swiper
         height (400/$rem)
@@ -738,7 +745,7 @@
 
 
     .brand-produce
-      margin-bottom (20/$rem)
+      padding-bottom (20/$rem)
       background-color #fff
       .header
         display flex
@@ -757,12 +764,10 @@
             vertical-align middle
             width (30/$rem)
             height (30/$rem)
-
-
       .container
         padding-bottom (8/$rem)
         .list
-          margin-left (0 16/$rem)
+          margin (0 8/$rem)
           height (468/$rem)
           .item
             display inline-block
