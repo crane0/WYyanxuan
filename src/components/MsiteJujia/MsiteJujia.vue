@@ -26,7 +26,7 @@
             <a href="/" class="good">
               <p class="txt">
                 <span>更多</span>
-                <span>居家好物</span>
+                <span>{{cateList.name}}好物</span>
               </p>
               <i class="icon"></i>
             </a>
