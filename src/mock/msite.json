@@ -4913,7 +4913,11 @@
       "originPrice": 39,
       "primaryPicUrl": "http://yanxuan.nosdn.127.net/191be005f37aecfef781d567042954cd.png",
       "remainTime": 81284,
-      "showFlash": true
+      "showFlash": true,
+      "saleIndexVO": {
+        "picUrl": "http://yanxuan.nosdn.127.net/a3ea2d1108c94c7dece05eddf95f6df5.jpg",
+        "saleCenterSwitch": true
+      }
   },
   "focusList": [
       {
@@ -7581,10 +7585,7 @@
           "unitPrice": 0
       }
   ],
-  "saleIndexVO": {
-      "picUrl": "http://yanxuan.nosdn.127.net/a3ea2d1108c94c7dece05eddf95f6df5.jpg",
-      "saleCenterSwitch": true
-  },
+
   "tagList": [
       {
           "appListPicUrl": "http://yanxuan.nosdn.127.net/d3a9d630994a3611c43f21ec5037cc5f.jpg",
