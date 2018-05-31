@@ -106,8 +106,6 @@
   @import "../../common/stylus/mixins.styl"
 
   .category-wrap
-    position relative
-    height 100%
     .header-wrap
       height (88/$rem)    //包一层，为了不使固定定位下的元素，钻进去
       .header
