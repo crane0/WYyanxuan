@@ -15,7 +15,8 @@ import {RECEIVE_HEADCATES,
   RECEIVE_TENFIFTEENS,
   RECEIVE_ZHENPIN,
   RECEIVE_YXLOOK,
-  RECEIVE_FINDMORES
+  RECEIVE_FINDMORES,
+  RECEIVE_CATEGORYS
   } from "./mutation_types";
 
 export default {
@@ -72,5 +73,11 @@ export default {
 
   [RECEIVE_FINDMORES] (state, {findMores}) {
     state.findMores = findMores
+  },
+
+
+
+  [RECEIVE_CATEGORYS] (state, {categorys}) {
+    state.categorys = categorys
   }
 }

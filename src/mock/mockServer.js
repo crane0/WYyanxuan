@@ -4,6 +4,7 @@
 import Mock from 'mockjs'
 import data from './msite.json'
 import shiwuData from './shiwu.json'
+import categoryData from './category.json'
 
 
 Mock.mock('/headCateList', {code:0, data: data.headCateList})
@@ -23,3 +24,6 @@ Mock.mock('/tenfifteen', {code:0, data: shiwuData.tenfifteen})
 Mock.mock('/zhenpin', {code:0, data: shiwuData.zhenpin})
 Mock.mock('/yxLook', {code:0, data: shiwuData.yxLook})
 Mock.mock('/findMore', {code:0, data: shiwuData.findMore})
+
+
+Mock.mock('/categoryData', {code:0, data: categoryData})

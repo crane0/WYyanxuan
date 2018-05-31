@@ -13,7 +13,8 @@ import {RECEIVE_HEADCATES,
   RECEIVE_TENFIFTEENS,
   RECEIVE_ZHENPIN,
   RECEIVE_YXLOOK,
-  RECEIVE_FINDMORES
+  RECEIVE_FINDMORES,
+  RECEIVE_CATEGORYS
   } from './mutation_types'
 
 import {reqHeadCateList,
@@ -30,7 +31,8 @@ import {reqHeadCateList,
   reqTenfifteen,
   reqZhenpin,
   reqYxLook,
-  reqFindMore
+  reqFindMore,
+  reqCategoryData
   } from '../api'
 
 export default {
@@ -162,5 +164,16 @@ export default {
       const findMores = result.data
       commit(RECEIVE_FINDMORES, {findMores})
     }
+  },
+
+
+
+  async getCategorys({commit}, callBack) {
+    const result = await reqCategoryData()
+    if (result.code === 0) {
+      const categorys = result.data
+      commit(RECEIVE_CATEGORYS, {categorys})
+    }
+    callBack && callBack()
   }
 }
