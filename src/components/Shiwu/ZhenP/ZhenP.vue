@@ -3,20 +3,20 @@
     <div class="container">
       <div class="title">严选甄品</div>
       <a href="/" class="post-item">
-        <div class="img-container" v-if="zhenpin.zhenpinBanner" :style="{backgroundImage:'url('+zhenpin.zhenpinBanner.picUrl+')'}">
+        <div class="img-container" v-if="zhenpin.zhenOne" :style="{backgroundImage:'url('+zhenpin.zhenOne.picUrl+')'}">
           <div class="tag">
-            <div class="content">{{zhenpin.zhenpinBanner.nickname}}</div>
+            <div class="content">{{zhenpin.zhenOne.nickname}}</div>
           </div>
         </div>
         <div class="topic-info">
           <div class="line1">
-            <div class="line1-title" v-if="zhenpin.zhenpinBanner">{{zhenpin.zhenpinBanner.title}}</div>
+            <div class="line1-title" v-if="zhenpin.zhenOne">{{zhenpin.zhenOne.title}}</div>
             <!--<div class="price">-->
-              <!--<span class="num">{{zhenpin.zhenpinBanner.priceInfo}}</span>-->
+              <!--<span class="num">{{zhenpin.zhenOne.priceInfo}}</span>-->
               <!--<span class="unit">元起</span>-->
             <!--</div>-->
           </div>
-          <div class="line2" v-if="zhenpin.zhenpinBanner">{{zhenpin.zhenpinBanner.subtitle}}</div>
+          <div class="line2" v-if="zhenpin.zhenOne">{{zhenpin.zhenOne.subtitle}}</div>
         </div>
       </a>
       <a href="/" class="minor-item" v-for="(zhen, index) in zhenpin.zhenpins" :key="index">

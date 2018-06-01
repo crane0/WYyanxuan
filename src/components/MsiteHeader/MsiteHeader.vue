@@ -55,11 +55,12 @@
   @import "../../common/stylus/mixins.styl"
   .nav-header
     position fixed!important
-    z-index 2
+    z-index 5
     left 0
     top 0
     width 100%
-    background-color #F4F4F4
+    background #fff
+    //background-color #F4F4F4
     header
       display flex
       align-items center

@@ -38,7 +38,7 @@
       </a>
     </div>
     <div class="welfare">
-      <a href="/" :style="{backgroundImage: 'url('+flashSaleIndexVO.saleIndexVO.picUrl+')' }"></a>
+      <a href="/" v-if="flashSaleIndexVO.saleIndexVO" :style="{backgroundImage: 'url('+flashSaleIndexVO.saleIndexVO.picUrl+')' }"></a>
     </div>
   </div>
 </template>

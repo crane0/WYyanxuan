@@ -39,7 +39,7 @@
       this.$store.dispatch('getYxLook', () => {
         setInterval(() => {
           this.show = !this.show
-        },500)
+        },600)
       })
     }
 
@@ -98,7 +98,7 @@
           border-radius 50%
           background-color #f48f18
           &.fade-leave-active
-            transition all 0.5s
+            transition all 1s
           &.fade-leave-to
             opacity 0
             transform scale(4)

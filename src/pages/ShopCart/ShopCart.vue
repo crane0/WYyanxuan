@@ -28,7 +28,7 @@
         <div class="img-container"></div>
         <div class="txt">
           <div class="txt-title">购物车空空如也</div>
-          <router-link class="txt-btn" to="/personal">登陆</router-link>
+          <router-link class="txt-btn" to="/login">登陆</router-link>
         </div>
       </div>
     </div>
@@ -41,7 +41,7 @@
   }
 </script>
 
-<style lang="stylus" rel="stylesheet/stylus">
+<style lang="stylus" rel="stylesheet/stylus" scoped>
   @import "../../common/stylus/mixins.styl"
 
   .shop-cart-wrap
