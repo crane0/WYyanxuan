@@ -169,7 +169,7 @@
       padding (30/$rem 30/$rem 21/$rem)
       .banner
         background center no-repeat #f4f4f4
-        /*background-image url("./images/banner.jpg")*/
+        /*background-image url("./img/banner.jpg")*/
         width 100%
         height (192/$rem)
         background-size cover
@@ -213,7 +213,7 @@
               .lazy-img
                 width (144/$rem)
                 height (144/$rem)
-                /*background url("./images/lazy.png") center no-repeat*/
+                /*background url("./img/lazy.png") center no-repeat*/
                 img
                   width 100%
                   height 100%

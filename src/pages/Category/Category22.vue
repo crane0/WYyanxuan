@@ -43,7 +43,7 @@
           <!--<li class="content-item">-->
             <!--<a href="/">-->
               <!--<div class="lazy-img">-->
-                <!--<img src="./images/item.png" alt="">-->
+                <!--<img src="./img/item.png" alt="">-->
               <!--</div>-->
               <!--<div class="name">床品件套</div>-->
             <!--</a>-->
@@ -229,7 +229,7 @@
               .lazy-img
                 width (144/$rem)
                 height (144/$rem)
-                /*background url("./images/lazy.png") center no-repeat*/
+                /*background url("./img/lazy.png") center no-repeat*/
                 img
                   width 100%
                   height 100%

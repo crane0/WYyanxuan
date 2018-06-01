@@ -84,7 +84,7 @@
             .lazy-img
               width (144/$rem)
               height (144/$rem)
-              /*background url("./images/lazy.png") center no-repeat*/
+              /*background url("./img/lazy.png") center no-repeat*/
               img
                 width 100%
                 height 100%

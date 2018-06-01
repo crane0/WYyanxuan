@@ -14,7 +14,7 @@
               <div class="join-inner">
                 <div class="avatars">
                   <div class="avatar" v-for="(partic, index) in tenfifteen.participantAvatar" :key="index">
-                    <img class="avatar-img" :src="partic ? partic : '/images/01.png'" alt="">
+                    <img class="avatar-img" :src="partic ? partic : userAvatar" alt="">
                   </div>
                   <div class="avatar">
                     <span class="dot"></span>
@@ -45,8 +45,20 @@
   import {mapState} from 'vuex'
   import Swiper from 'swiper'
   import 'swiper/dist/css/swiper.min.css'
+  import userAvatar from './images/ava.png'
+
+  console.log(userAvatar)
 
   export default {
+    data(){
+      return {
+        /*
+        * 这里是为了，在进行判断使用默认图像时，路径一直无法引入，
+        * 所以，将其作为变量属性进行传递，才可以使用。
+        * */
+        userAvatar: userAvatar
+      }
+    },
     name: "tenfive",
     computed: {
       ...mapState(['tenfifteens'])
@@ -71,7 +83,6 @@
   .tenfive-wrap
     padding (0 30/$rem 40/$rem)
     margin-bottom (20/$rem)
-    //height (531/$rem)
     background-color #fff
     .inner
       .title
@@ -191,5 +202,4 @@
                   width (30/$rem)
                   height (30/$rem)
                   vertical-align middle
-
 </style>
