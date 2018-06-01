@@ -8,7 +8,8 @@
     </div>
     <div class="container">
       <ul class="list">
-        <li class="item" v-for="(tagList, index) in tagLists" :key="index">
+        <!--加判断，为了防止还没有获取到数据-->
+        <li v-if="tagList" class="item" v-for="(tagList, index) in tagListsFliter" :key="index">
           <a href="/">
             <div class="content">
               <h4 class="title">{{tagList.name}}</h4>
@@ -31,7 +32,15 @@
   export default {
     name: "msite-brand-produce",
     computed: {
-      ...mapState(['tagLists'])
+      ...mapState(['tagLists']),
+
+      tagListsFliter () {
+        let arr = []
+        for(var i = 0; i < 4; i++){
+          arr.push(this.tagLists[i])
+        }
+        return arr
+      }
     },
     mounted () {
       this.$store.dispatch('getTagList')
@@ -67,7 +76,6 @@
       .list
         margin (0 12/$rem)
         height (468/$rem)
-        overflow hidden
         .item
           display inline-block
           position relative
