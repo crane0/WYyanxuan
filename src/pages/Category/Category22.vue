@@ -62,8 +62,8 @@
     name: "category",
     data () {
       return {
-        currentCategory: [],
-        imgCategory: [],
+        currentCategory: [],  //categorys中的category的subCateList
+        imgCategory: [],  //categorys中的category
         categoryId: 1005000
       }
     },
@@ -93,6 +93,11 @@
         this.categoryId = category.id
         this.imgCategory = category
       },
+
+      /*
+      * findId方法，在mounted中调用
+      *   通过 从页面获取的id和下面的id进行遍历，获取满足条件的category
+      * */
       findId () {
         return this.categorys.find((category, index) => {
           return category.id === this.categoryId

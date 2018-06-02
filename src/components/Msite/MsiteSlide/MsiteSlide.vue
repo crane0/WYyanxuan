@@ -4,7 +4,7 @@
       <div class="swiper-container swiper-inner1">
         <div class="swiper-wrapper">
           <div class="swiper-slide" v-for="(focusList, index) in focusLists" :key="index">
-            <img v-lazy="focusList.picUrl" alt="">
+            <img v-lazy="focusList.picUrl" :src="focusList.picUrl" alt="">
           </div>
         </div>
         <!-- 如果需要分页器 -->

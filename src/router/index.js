@@ -7,13 +7,13 @@ import VueRouter from 'vue-router'
 // import ShopCart from '../pages/ShopCart/ShopCart'
 // import Personal from '../pages/Personal/Personal'
 // import Login from '../pages/Login/Login'
-
+const Login = () => import('../pages/Login/Login')
 const Msite = () => import('../pages/Msite/Msite')
 const Shiwu = () => import('../pages/Shiwu/Shiwu')
 const Category = () => import('../pages/Category/Category')
 const ShopCart = () => import('../pages/ShopCart/ShopCart')
 const Personal = () => import('../pages/Personal/Personal')
-const Login = () => import('../pages/Login/Login')
+
 import InterLayer from '../pages/InterLayer/InterLayer'
 
 Vue.use(VueRouter)
